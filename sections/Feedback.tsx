@@ -5,9 +5,10 @@ import { motion } from 'framer-motion';
 import styles from '@styles';
 import { fadeIn, staggerContainer, zoomIn } from '@utils/motion';
 
-const Feedback = () => (
+const Feedback: React.FC = () => (
   <section className={`${styles.paddings}`}>
     <motion.div
+      // @ts-ignore
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"

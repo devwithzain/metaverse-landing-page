@@ -5,9 +5,10 @@ import { motion } from 'framer-motion';
 import styles from '@styles';
 import { slideIn, staggerContainer, textVariant } from '@utils/motion';
 
-const Hero = () => (
+const Hero: React.FC = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
     <motion.div
+      // @ts-ignore
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"

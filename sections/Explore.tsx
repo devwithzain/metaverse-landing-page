@@ -8,12 +8,13 @@ import { exploreWorlds } from '@constants';
 import { staggerContainer } from '@utils/motion';
 import { ExploreCard, TitleText, TypingText } from '@components';
 
-const Explore = () => {
+const Explore: React.FC = () => {
   const [active, setActive] = useState('world-2');
 
   return (
     <section className={`${styles.paddings}`} id="explore">
       <motion.div
+        // @ts-ignore
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
@@ -22,6 +23,7 @@ const Explore = () => {
       >
         <TypingText title="| The World" textStyles="text-center" />
         <TitleText
+          // @ts-ignore
           title={<>Choose the world you want <br className="md:block hidden" /> to explore</>}
           textStyles="text-center"
         />

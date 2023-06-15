@@ -1,12 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { socials } from '../constants';
+import { socials } from '@constants';
 
-import styles from '../styles';
-import { footerVariants } from '../utils/motion';
+import styles from '@styles';
+import { footerVariants } from '@utils/motion';
+import Image from 'next/image';
 
-const Footer = () => (
+const Footer: React.FC = () => (
   <motion.footer
     variants={footerVariants}
     initial="hidden"
@@ -20,10 +21,12 @@ const Footer = () => (
           Enter the Metaverse
         </h4>
         <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
-          <img
+          <Image
             src="/headset.svg"
             alt="headset"
-            className="w-[24px] h-[24px] object-contain"
+            className="object-contain"
+            width={24}
+            height={24}
           />
           <span className="font-normal text-[16px] text-white">
             Enter Metaverse
@@ -44,11 +47,13 @@ const Footer = () => (
 
           <div className="flex gap-4">
             {socials.map((social) => (
-              <img
+              <Image
                 key={social.name}
                 src={social.url}
                 alt={social.name}
-                className="w-[24px] h-[24px] object-contain cursor-pointer"
+                className="object-contain cursor-pointer"
+                width={24}
+                height={24}
               />
             ))}
           </div>

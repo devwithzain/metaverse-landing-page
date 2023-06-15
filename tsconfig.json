@@ -28,10 +28,10 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/page.jsx",
-    "app/layout.jsx",
-    "styles/index.js",
-    "constants/index.js"
+    "app/page.tsx",
+    "app/layout.tsx",
+    "styles/index.ts",
+    "constants/index.ts"
   ],
   "exclude": ["node_modules"]
 }

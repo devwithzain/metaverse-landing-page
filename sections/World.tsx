@@ -6,9 +6,10 @@ import styles from '@styles';
 import { TitleText, TypingText } from '@components';
 import { fadeIn, staggerContainer } from '@utils/motion';
 
-const World = () => (
+const World: React.FC = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
+      // @ts-ignore
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"

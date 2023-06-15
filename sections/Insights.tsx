@@ -7,9 +7,10 @@ import { insights } from '@constants';
 import { staggerContainer } from '@utils/motion';
 import { InsightCard, TitleText, TypingText } from '@components';
 
-const Insights = () => (
+const Insights: React.FC = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
+      // @ts-ignore
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"

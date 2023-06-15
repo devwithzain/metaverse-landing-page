@@ -7,9 +7,10 @@ import { startingFeatures } from '@constants';
 import { StartSteps, TitleText, TypingText } from '@components';
 import { staggerContainer, fadeIn, planetVariants } from '@utils/motion';
 
-const GetStarted = () => (
+const GetStarted: React.FC = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
+      // @ts-ignore
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"

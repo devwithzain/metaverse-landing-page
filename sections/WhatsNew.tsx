@@ -7,9 +7,10 @@ import { newFeatures } from '@constants';
 import { NewFeatures, TitleText, TypingText } from '@components';
 import { planetVariants, staggerContainer, fadeIn } from '@utils/motion';
 
-const WhatsNew = () => (
+const WhatsNew: React.FC = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
+      // @ts-ignore
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
