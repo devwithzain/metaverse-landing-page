@@ -22,6 +22,7 @@ const WhatsNew: React.FC = () => (
         className="flex-[0.95] flex justify-center flex-col"
       >
         <TypingText title="| Whats new?" />
+        {/* @ts-ignore */}
         <TitleText title={<>What's new about Metaversus?</>} />
         <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
           {newFeatures.map((feature) => (
