@@ -18,6 +18,7 @@ const Insights: React.FC = () => (
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <TypingText title="| Insight" textStyles="text-center" />
+      {/* @ts-ignore */}
       <TitleText title={<>Insight about metaverse</>} textStyles="text-center" />
       <div className="mt-[50px] flex flex-col gap-[30px]">
         {insights.map((item, index) => (
