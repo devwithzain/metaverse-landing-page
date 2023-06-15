@@ -1,5 +1,5 @@
 export interface TypingTextProps {
-    title: string | any;
+    title: string;
     textStyles?: string;
 
 };
