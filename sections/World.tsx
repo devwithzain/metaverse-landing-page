@@ -18,12 +18,8 @@ const World: React.FC = () => (
     >
 
       <TypingText title="| People on the World" textStyles="text-center" />
-      <TitleText
-        title={(
-          <>Track friends around you and invite them to play together in the same
-            world
-          </>
-        )}
+      {/* @ts-ignore */}
+      <TitleText title={(<>Track friends around you and invite them to play together in the same world</>)}
         textStyles="text-center"
       />
 
